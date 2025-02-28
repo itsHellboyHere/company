@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Company Directory
 
-## Getting Started
+This is a **Company Directory** web application built using **Next.js**, **Tailwind CSS**, and **PostgreSQL (NeonDB)**. The project allows users to browse a list of companies and view details about each company, including its directors.
 
-First, run the development server:
+## 🚀 Live Demo
+[Company Directory - Deployed on Vercel](https://company-git-main-vishals-projects-f27531e5.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🛠 Tech Stack
+- **Frontend**: Next.js (App Router), Tailwind CSS, Lucide React Icons
+- **Backend**: Next.js API Routes
+- **Database**: PostgreSQL (NeonDB)
+- **Deployment**: Vercel
+
+## 📂 Project Structure
+```
+/company-page
+│-- src/
+│   ├── app/
+│   │   ├── api/
+│   │   │   ├── companies/route.js  # API route for fetching companies
+│   │   │   ├── directors/route.js  # API route for fetching directors
+│   │   ├── page.js   # Entry point for UI
+│   │   ├── layout.js # Layout component
+│   ├── lib/
+│   │   ├── db.js  # Database connection setup
+│   ├── styles/
+│   │   ├── globals.css  # Global styles
+│-- public/  # Static assets
+│-- .env.local  # Environment variables
+│-- package.json  # Dependencies
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 💾 Setup & Installation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/your-username/company-page.git
+cd company-page
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2️⃣ Install Dependencies
+```sh
+yarn install   # or npm install
+```
 
-## Learn More
+### 3️⃣ Set Up Environment Variables
+Create a `.env.local` file in the root directory and add:
+```
+DATABASE_URL=your_neondb_connection_string
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 4️⃣ Run the Development Server
+```sh
+yarn dev   # or npm run dev
+```
+Visit `http://localhost:3000` in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔧 Features
+✅ Fetch and display a list of companies from PostgreSQL.
+✅ View details of a selected company, including its directors.
+✅ Responsive design with Tailwind CSS.
+✅ API routes to handle database queries securely.
+✅ Deployed on Vercel for seamless hosting.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Deployment
+The project is deployed on **Vercel**. To deploy manually:
+```sh
+vercel
+```
+Ensure your environment variables are set in **Vercel dashboard** under **Project Settings > Environment Variables**.
 
-## Deploy on Vercel
+## 📌 Future Improvements
+- Add authentication for admin access.
+- Implement search and filtering.
+- Improve UI/UX with animations.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🤝 Contributing
+Feel free to fork the repo, create a branch, and submit a pull request!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📜 License
+This project is licensed under the MIT License.
+
+Made with ❤️ by Vishal
