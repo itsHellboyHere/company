@@ -22,26 +22,33 @@
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 } */
- *{
+
+*{
   margin: 0;
   box-sizing: border-box;
+  padding: 0;
 }
 
 .home{
   background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-
 }
 nav{
   margin-bottom: 20px;
+  padding: 15px;
 }
 
+
 .companies{
-padding: 10px;
+padding: 13px;
 /* background: #171717; */
 }
 .company{
   padding: 20px;
 }
-  
+.header h3{
+  margin-right: 20px;
+  padding: 3px;
+}
+
 
 
