@@ -10,6 +10,7 @@ export async function GET(request) {
 
     try {
         const result = await pool.query("SELECT * FROM directors WHERE company_id = $1", [company_id]);
+        // console.log(result.rows)
         return Response.json(result.rows);
     } catch (error) {
         return Response.json({ error: error.message }, { status: 500 });

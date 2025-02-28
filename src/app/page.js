@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import './globals.css'
 import { Phone, Briefcase, ChevronDown, Menu, X } from "lucide-react";
+import Link from "next/link";
 export default function Home() {
   const [companies, setCompanies] = useState([]);
   const [selectedCompany, setSelectedCompany] = useState(null);
@@ -33,7 +34,7 @@ export default function Home() {
 
 
       <nav className="bg-white text-blue-800 text-2xl font-bold py-4 shadow-md flex items-center justify-between px-6 md:px-8 w-full">
-        {/* Logo Section */}
+
         <div className="flex items-center gap-2">
           <Briefcase className="w-6 h-6 text-blue-800" />
           <span>
@@ -84,9 +85,9 @@ export default function Home() {
             )}
           </li>
 
-          <li className="hover:text-orange-500 cursor-pointer px-6 py-2 md:p-0">
+          <Link href="/about"><li className="hover:text-orange-500 cursor-pointer px-6 py-2 md:p-0">
             About
-          </li>
+          </li> </Link>
           <li className="hover:text-orange-500 cursor-pointer px-6 py-2 md:p-0">
             Contact Us
           </li>
